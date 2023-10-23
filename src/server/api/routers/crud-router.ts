@@ -19,7 +19,7 @@ const userUpdateSchema = z.object({
   email: z.string()
 });
 
-export const exampleRouter = createTRPCRouter({
+export const crudRouter = createTRPCRouter({
   hello: publicProcedure //hello world
     .input(z.object({ text: z.string() }))
     .query(({ input }) => {
